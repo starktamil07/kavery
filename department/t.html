@@ -1,0 +1,156 @@
+<section id="about">
+    <div class="about-container">
+        <div class="principal-photo">
+            <img src="principal.jpg" alt="Principal's Photo">
+        </div>
+
+        <div class="principal-details">
+            <h2>About Our Institution</h2>
+            <p>
+                Welcome to our institution, where we strive for excellence in education. 
+                Our dedicated faculty and management work tirelessly to ensure the best learning experience for students.
+            </p>
+
+            <!-- Button Section -->
+            <div class="btn-section">
+                <a href="management.html" class="btn management-btn">Meet Our Management</a>
+                <a href="admission.html" class="btn admission-btn">Admission Details</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* About Section Styling */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    padding: 50px;
+}
+
+/* Flexbox Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Principal's Image */
+.principal-photo img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.principal-photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Principal's Details */
+.principal-details {
+    flex: 1;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.principal-details h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.principal-details p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Buttons Section */
+.btn-section {
+    display: flex;
+    gap: 20px;
+}
+
+/* Common Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Management Button */
+.management-btn {
+    background: #007bff;
+    color: white;
+}
+
+.management-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Admission Button */
+.admission-btn {
+    background: #28a745;
+    color: white;
+}
+
+.admission-btn:hover {
+    background: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal-photo img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .principal-details {
+        padding: 20px;
+    }
+
+    .btn-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+</style>

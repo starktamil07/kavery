@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Department</title>
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Department of Computer Engineering</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#staff">Staff Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#department">Department</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#syllabus">Syllabus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#placement">Placement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+
+<!-- Services Section -->
+<section id="home" class="d-flex align-items-center">
+    <!-- Home Section -->
+    <section id="home"> <br>
+        <img src="image/title.png" alt="Kavery Polytechnic College Logo" class="logo"> <!-- Add your logo image -->
+        <div class="department-info">
+            <h1>Department of Computer Engineering</h1>
+            <p>
+                Our Department was established in the year 2001. It follows the curriculum prescribed by DOTE, Chennai, for the award of Diploma with an aim to teach computer education for rural students with an intake of 60 students per year.
+                The Department of Computer Engineering has highly qualified faculty members who focus on practical training and industry-oriented skills. Students get access to advanced hardware and software platforms to enhance their learning experience.
+            </p>
+        </div>
+         <!-- Image Gallery -->
+         
+           
+        </div>
+    </section>
+</section>
+
+<!-- Services Section -->
+<section id="staff" class="d-flex align-items-center" >
+    <section class="staff-profile" id="staff">
+        <h2>Staff Profiles</h2>
+        <div class="staff-container">
+            <div class="staff-member" onclick="toggleDetails(this)">
+                <h3>1</h3>
+                <p>Professor</p>
+                <div class="staff-details">
+                    <p><strong>Educational Qualification:</strong> BE</p>
+                    <p><strong>Area of Specialization:</strong> JAVA</p>
+                    <p><strong>Email:</strong> example@gmail.com</p>
+                </div>
+            </div>
+            <div class="staff-member" onclick="toggleDetails(this)">
+                <h3>2</h3>
+                <p>Professor</p>
+                <div class="staff-details">
+                    <p><strong>Educational Qualification:</strong> BE</p>
+                    <p><strong>Area of Specialization:</strong> CBT</p>
+                    <p><strong>Email:</strong> example@gmail.com</p>
+                </div>
+            </div>
+            <div class="staff-member" onclick="toggleDetails(this)">
+                <h3>3</h3>
+                <p>Professor</p>
+                <div class="staff-details">
+                    <p><strong>Educational Qualification:</strong> BE</p>
+                    <p><strong>Area of Specialization:</strong> Python</p>
+                    <p><strong>Email:</strong> example@gmail.com</p>
+                </div>
+            </div>
+            <div class="staff-member" onclick="toggleDetails(this)">
+                <h3>4</h3>
+                <p>Professor</p>
+                <div class="staff-details">
+                    <p><strong>Educational Qualification:</strong> BE</p>
+                    <p><strong>Area of Specialization:</strong> Big Data Analytics</p>
+                    <p><strong>Email:</strong> example@gmail.com</p>
+                </div>
+            </div>
+            <div class="staff-member" onclick="toggleDetails(this)">
+                <h3>5</h3>
+                <p>Professor</p>
+                <div class="staff-details">
+                    <p><strong>Educational Qualification:</strong> BE</p>
+                    <p><strong>Area of Specialization:</strong> AI & ML</p>
+                    <p><strong>Email:</strong> example@gmail.com</p>
+                </div>
+            </div>
+            <div class="staff-member" onclick="toggleDetails(this)">
+                <h3>6</h3>
+                <p>Professor</p>
+                <div class="staff-details">
+                    <p><strong>Educational Qualification:</strong> BE</p>
+                    <p><strong>Area of Specialization:</strong> Cybersecurity</p>
+                    <p><strong>Email:</strong> example@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+
+  <!-- Services Section -->
+<section id="department" class="d-flex align-items-center" >
+    <section id="department" class="d-flex align-items-center">
+        <div class="container">
+            <h2 class="section-title">Department Activities</h2>
+    
+            <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Image 1 -->
+                    <div class="carousel-item active">
+                        <div class="carousel-content">
+                            <img src="image/cse.jpeg" class="event-img" alt="Symposium">
+                            <div class="event-details">
+                                <h3>Symposium</h3>
+                                <p>A technical event where students present papers, discuss innovations, and share knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Image 2 -->
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <img src="image/cse.jpeg" class="event-img" alt="Sports Day">
+                            <div class="event-details">
+                                <h3>Sports Day</h3>
+                                <p>A day full of athletic competitions, team games, and individual challenges.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Image 3 -->
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <img src="image/cse.jpeg" class="event-img" alt="Technical Events">
+                            <div class="event-details">
+                                <h3>Technical Events</h3>
+                                <p>Hackathons, coding contests, and robotics challenges for tech enthusiasts.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Image 4 -->
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <img src="image/cse.jpeg" class="event-img" alt="Cultural Fest">
+                            <div class="event-details">
+                                <h3>Cultural Fest</h3>
+                                <p>Music, dance, drama, and art competitions to showcase creativity.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Image 5 -->
+                    <div class="carousel-item">
+                        <div class="carousel-content">
+                            <img src="image/cse.jpeg" class="event-img" alt="Workshops">
+                            <div class="event-details">
+                                <h3>Workshops</h3>
+                                <p>Hands-on sessions with industry experts to learn new technologies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+    
+            <!-- Gallery Button -->
+            <div class="gallery-btn">
+                <a href="gallery.html" class="btn">View Gallery</a>
+            </div>
+        </div>
+    </section>
+  </section>
+
+  <!-- Services Section -->
+<section id="syllabus" class="d-flex align-items-center" >
+    <!-- Syllabus Section -->
+    <section class="syllabus">
+        <h2>Syllabus</h2>
+        <p>Download the syllabus for various semesters:</p>
+
+        <div class="syllabus-container">
+            <a href="CSE_syllabus19.pdf" class="btn-download">TimeTable</a>
+            <a href="syllabus_sem3.pdf" class="btn-download">Semester 3 Syllabus</a>
+            <a href="syllabus_sem4.pdf" class="btn-download">Semester 4 Syllabus</a>
+            <a href="syllabus_sem5.pdf" class="btn-download">Semester 5 Syllabus</a>
+            <a href="syllabus_sem6.pdf" class="btn-download">Semester 6 Syllabus</a>
+        </div>
+    </section>
+
+  </section>
+
+  
+  <!-- Services Section -->
+<section id="placement" class="d-flex align-items-center" >
+    <section id="placement">
+        <div class="banner">
+            <img src="image/poly_Recruiters.jpg" alt="Placement Banner">
+        </div>
+    
+        <div class="placement-details">
+            <h2>Placement Statistics</h2>
+            <div class="companies">
+                <!-- Example Placement Cards -->
+                <div class="company-card">
+                    <img src="image/cse.jpeg" alt="TVS Motor">
+                    <h3>TVS Motor</h3>
+                    <p><strong>Students Placed:</strong> 1</p>
+                    <p><strong>Salary:</strong> 3.8 LPA</p>
+                </div>
+    
+                <div class="company-card">
+                    <img src="image/cse.jpeg" alt="Hyundai">
+                    <h3>Hyundai</h3>
+                    <p><strong>Students Placed:</strong> 50</p>
+                    <p><strong>Salary:</strong> 2.5 LPA</p>
+                </div>
+    
+                <div class="company-card">
+                    <img src="image/cse.jpeg" alt="Marico">
+                    <h3>Marico</h3>
+                    <p><strong>Students Placed:</strong> 11</p>
+                    <p><strong>Salary:</strong> 2.2 LPA</p>
+                </div>
+    
+                <div class="company-card">
+                    <img src="image/cse.jpeg" alt="TAFE">
+                    <h3>TAFE</h3>
+                    <p><strong>Students Placed:</strong> 56</p>
+                    <p><strong>Salary:</strong> 2.16 LPA</p>
+                </div>
+    
+                <div class="company-card">
+                    <img src="image/cse.jpeg" alt="NSK">
+                    <h3>NSK</h3>
+                    <p><strong>Students Placed:</strong> 13</p>
+                    <p><strong>Salary:</strong> 2 LPA</p>
+                </div>
+    
+                <!-- Add more companies as needed -->
+            </div>
+        </div>
+    </section>
+  </section>
+
+  <!-- Services Section -->
+<section id="about" class="d-flex align-items-center">
+    <section id="about" class="d-flex align-items-center">
+        <div class="about-container">
+            <!-- Principal's Image -->
+            <div class="principal-photo">
+                <img src="image/principal-kavery.jpg" alt="Principal's Photo">
+            </div>
+    
+            <!-- Principal's Details -->
+            <div class="principal-details">
+                <h2>About Our Principal</h2>
+                <p>
+                    A college that boasts of more than 75 State Rank Holders, this institution has set standards under the leadership of the Principal, Prof. K.P.Nandakumar. An excellent faculty and sound infrastructure have ensured that students get the best of education to pursue the careers of their choice.
+    
+    Education is the most powerful tool, capable of bringing the positive aptitude in the individual. In this competitive global scenario it is necessary to prepare the students to meet new challenges to enhance their career.
+    
+    The noble idea of our institution is to identify raw talents among the students and shape them into champions with imperishable knowledge to face the global challenges and also aims at becoming a center of excellence, providing the highest quality education and training.
+    
+    If student do their work with honest and hardworking then they become a very successful man. Because “Hard work is the key to Success”.
+                </p>
+    
+                <!-- Buttons for Management & Admission -->
+                <div class="btn-section">
+                    <a href="management.html" class="btn management-btn">Meet Our Management</a>
+                    <a href="admission.html" class="btn admission-btn">Admission Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+  
+  
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleDetails(element) {
+            element.classList.toggle('active');
+        }
+
+
+        function revealOnScroll() {
+        let elements = document.querySelectorAll(".fade-in");
+        let windowHeight = window.innerHeight;
+
+        elements.forEach(element => {
+            let elementTop = element.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 50) {
+                element.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+    </script>
+
+</body>
+</html>

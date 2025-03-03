@@ -1,0 +1,173 @@
+<section id="about" class="d-flex align-items-center">
+    <div class="about-container">
+        <!-- Principal's Image -->
+        <div class="principal-photo">
+            <img src="principal.jpg" alt="Principal's Photo">
+        </div>
+
+        <!-- Principal's Details -->
+        <div class="principal-details">
+            <h2>About Our Principal</h2>
+            <p>
+                A college that boasts of more than 75 State Rank Holders, this institution has set standards under the leadership of the Principal, Prof. K.P.Nandakumar. An excellent faculty and sound infrastructure have ensured that students get the best of education to pursue the careers of their choice.
+
+Education is the most powerful tool, capable of bringing the positive aptitude in the individual. In this competitive global scenario it is necessary to prepare the students to meet new challenges to enhance their career.
+
+The noble idea of our institution is to identify raw talents among the students and shape them into champions with imperishable knowledge to face the global challenges and also aims at becoming a center of excellence, providing the highest quality education and training.
+
+If student do their work with honest and hardworking then they become a very successful man. Because “Hard work is the key to Success”.
+            </p>
+
+            <!-- Buttons for Management & Admission -->
+            <div class="btn-section">
+                <a href="management.html" class="btn management-btn">Meet Our Management</a>
+                <a href="admission.html" class="btn admission-btn">Admission Details</a>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    /* Section Styling */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160vh;
+    background: #fff;
+    padding: 30px;
+}
+
+/* Flexbox Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Principal's Image */
+.principal-photo img {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.principal-photo img:hover {
+    transform: scale(1.05);
+}
+
+/* Principal's Details */
+.principal-details {
+    flex: 1;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.principal-details h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling with Line Breaks */
+.principal-details p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    white-space: pre-line;  /* Ensures <br> works correctly */
+}
+
+/* Buttons Section */
+.btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Common Button Styling */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s, background 0.3s;
+    text-align: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Management Button */
+.management-btn {
+    background: #007bff;
+    color: white;
+    border: 2px solid #0056b3;
+}
+
+.management-btn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Admission Button */
+.admission-btn {
+    background: #28a745;
+    color: white;
+    border: 2px solid #1e7e34;
+}
+
+.admission-btn:hover {
+    background: #1e7e34;
+    transform: scale(1.1);
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal-photo img {
+        width: 200px;
+        height: 250px;
+    }
+
+    .principal-details {
+        padding: 20px;
+    }
+
+    .btn-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+</style>
